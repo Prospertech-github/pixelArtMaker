@@ -46,11 +46,11 @@ startDrawing.addEventListener('click', function () {
 })
 
 function makeGrid(gridWidth, gridHeight) {
-  // Resets table
+  // Resets table DOM
   table.innerHTML = "";
   
-  //Checks if gridHeight or gridWidth is 
-  if (gridHeight !== 1 || gridWidth !== 1) {
+  //Checks if gridHeight or gridWidth is 1
+  if (gridHeight > 1 || gridWidth > 1) {
     
     //Sets new table grids
     for (w = 0; w < gridHeight; w++){
@@ -63,6 +63,9 @@ function makeGrid(gridWidth, gridHeight) {
         rows.appendChild(columns)
       }
     }
+  } else {
+    //Alerts user to put a number greater than 1
+    alert('Please input a number greater than 1 in the Grid Height and Grid Width inputs')
   }
 
 }
