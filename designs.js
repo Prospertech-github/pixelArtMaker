@@ -21,13 +21,16 @@ sizeInput.addEventListener("submit", function (event) {
 })
 
 function draw(e) {
+  //Checks if hoverevent is true of false
   if (hoverEvent) {
+    //Checks isErase value and starts drawing
     if (isErase) {
       e.target.style.backgroundColor = "#fff";
     } else {
       e.target.style.backgroundColor = color.value
     }
   } else {
+    //alerts user to click the button to start drawing
     alert('Please click the Start drawing button')
   }
 }
