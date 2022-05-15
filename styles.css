@@ -7,20 +7,21 @@
 
 body {
     text-align: center;
+    font-size: 10px;
 }
 
 h1 {
     font-family: Monoton;
-    font-size: 70px;
+    font-size: 7rem;
     margin: 0.2em;
 }
 
 h2 {
-    margin: 1em 0 0.25em;
+    margin: 1rem 0 0.25rem;
 }
 
 h2:first-of-type {
-    margin-top: 0.5em;
+    margin-top: 0.5rem;
 }
 
 table,
@@ -33,32 +34,49 @@ table {
     border-collapse: collapse;
     margin: 0 auto;
 }
+
 tr,td{
-    padding: 20px;
+    padding: 2rem;
 }
+
 tr {
-    height: 20px;
+    height: 2rem;
 }
 
 td {
-    width: 20px;
+    width: 2rem;
 }
+
 .btns{
-    margin: 20px;
-
+    margin: 2rem;
 }
+
 button{
-    padding: 5px;
+    font-size: 1.8rem;
+    padding: 0.5rem 1rem;
     border: none;
-    border-radius: 5px;
-    margin-right: 20px;
+    border-radius: 0.rem;
+    margin-right: 2rem;
 }
-.submit-btn{
-    padding: 5px;
 
-    border-radius: 5px;
+.submit-btn{
+    padding: 0.5rem;
+    border-radius: 0.5rem;
 }
+
 
 input[type=number] {
-    width: 6em;
+    width: 0.6rem;
+}
+
+.start-btn, .clear{
+    color: #f4f4f4;
+}
+
+.start-btn{
+    background-color: #489c48;
+}
+
+.clear{
+    background-color: #ed0e0e;
 }

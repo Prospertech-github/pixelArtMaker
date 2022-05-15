@@ -56,8 +56,8 @@ function makeGrid(gridWidth, gridHeight) {
   // Resets table DOM
   table.innerHTML = "";
   
-  //Checks if gridHeight or gridWidth is 1
-  if (gridHeight > 1 || gridWidth > 1) {
+  //Checks if gridHeight and gridWidth is 1
+  if (gridHeight > 1 && gridWidth > 1) {
     
     //Sets new table grids
     for (w = 0; w < gridHeight; w++){
