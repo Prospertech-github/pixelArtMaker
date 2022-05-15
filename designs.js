@@ -37,10 +37,14 @@ table.addEventListener('mouseover', draw)
 clear.addEventListener('click', function () {
   table.innerHTML = '';
 })
+
 eraser.addEventListener('click', function(){
+  //Resets the isErase value
   isErase = true;
 })
+
 startDrawing.addEventListener('click', function () {
+  //Resets the isErase and hoverEvent value to enable drawing  
   isErase = false;
   hoverEvent = true;
 })
