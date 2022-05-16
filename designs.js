@@ -8,7 +8,7 @@ const table = document.getElementById("pixelCanvas");
 const sizeInput = document.getElementById("sizePicker");
 const clear = document.querySelector(".clear");
 const eraser = document.querySelector(".eraser");
-const startDrawing = document.querySelector(".random-color");
+const startDrawing = document.querySelector(".start-btn");
 
 let isErase = false;
 let hoverEvent = false;
@@ -16,7 +16,7 @@ let hoverEvent = false;
 // When size is submitted by the user, call makeGrid()
 sizeInput.addEventListener("submit", function (event) {
   event.preventDefault()
-  makeGrid(gridWidth.value, gridHeight.value);
+  table.innerHTML === "" ? makeGrid(gridWidth.value, gridHeight.value) : "";
 
 })
 
@@ -46,10 +46,12 @@ eraser.addEventListener('click', function(){
   isErase = true;
 })
 
-startDrawing.addEventListener('click', function () {
+startDrawing.addEventListener('click', function (e) {
+  console.log(e.target)
   //Resets the isErase and hoverEvent value to enable drawing  
   isErase = false;
   hoverEvent = true;
+  return true;
 })
 
 function makeGrid(gridWidth, gridHeight) {

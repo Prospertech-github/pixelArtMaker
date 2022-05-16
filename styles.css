@@ -64,9 +64,9 @@ button{
     border-radius: 0.5rem;
 }
 
-
 input[type=number] {
-    width: 0.6rem;
+    width: 4rem;
+    padding: 0.3rem;
 }
 
 .start-btn, .clear{
